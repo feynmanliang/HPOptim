@@ -38,7 +38,7 @@ function trainHyper(tab_params) -- change after to just trainHyper... no returni
   opt.batchnorm = 1
 
   -- Optimization options
-  opt.max_epochs = 20
+  opt.max_epochs = 50
   opt.learning_rate = 2e-3
   opt.grad_clip = 5
   opt.lr_decay_every = 5
@@ -46,7 +46,7 @@ function trainHyper(tab_params) -- change after to just trainHyper... no returni
 
   -- Output options
   opt.print_every = 1
-  opt.checkpoint_every = 1000
+  opt.checkpoint_every = 0
   opt.checkpoint_name = 'cv/checkpoint'
 
   -- Benchmark options

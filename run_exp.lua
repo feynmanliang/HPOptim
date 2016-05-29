@@ -23,4 +23,4 @@ end
 -- Usage HPOptim Module
 local HPOptim = require('/HPOptim/HPOptim.lua') -- load HPOptim module
 HPOptim.init()
-HPOptim.findHP(1800) -- Spearmint runs for 30 seconds
+HPOptim.findHP(60 * 60 * 8) -- Spearmint runs for 30 seconds
