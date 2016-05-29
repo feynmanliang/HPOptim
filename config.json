@@ -1,0 +1,33 @@
+{
+    "language"        : "PYTHON",
+    "main-file"       : "model.py",
+    "experiment-name" : "duration",
+    "likelihood"      : "GAUSSIAN",
+    "variables" : {
+        "seq_length" : {
+            "type" : "FLOAT",
+            "size" : 1,
+            "min"  : 0,
+            "max"  : 1.2042
+        },
+        "rnn_size" : {
+            "type" : "FLOAT",
+            "size" : 1,
+            "min"  : 0,
+            "max"  : 2.7093
+        },
+        "num_layers" : {
+            "type" : "FLOAT",
+            "size" : 1,
+            "min"  : 0,
+            "max"  : 0.9031
+        },
+        "wordvec_size" : {
+            "type" : "FLOAT",
+            "size" : 1,
+            "min"  : 0,
+            "max"  : 2.11
+        }
+    }
+}
+
