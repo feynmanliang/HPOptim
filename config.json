@@ -1,7 +1,7 @@
 {
     "language"        : "PYTHON",
     "main-file"       : "model.py",
-    "experiment-name" : "duration",
+    "experiment-name" : "constant_timestep",
     "likelihood"      : "GAUSSIAN",
     "variables" : {
         "seq_length" : {
