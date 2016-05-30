@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 import numpy as np
+import pprint
 import pymongo
-from tabulate import tabulate
 import zlib
+
+from tabulate import tabulate
 
 def decompress_array(a):
     """Decompress and map from log10 space back to standard coordinates."""
@@ -34,8 +36,11 @@ if __name__ == "__main__":
     EXP_NAME = 'duration'
     PARAMS = ['rnn_size', 'seq_length', 'wordvec_size', 'num_layers']
 
+
     print tabulate(
         main(EXP_NAME, PARAMS),
         headers='keys',
-        tablefmt='simple_tables')
+        tablefmt='pipe')
+
+    pprint.pprint(min(main(EXP_NAME, PARAMS), key=lambda x: x['val_loss']))
 
