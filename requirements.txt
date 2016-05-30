@@ -1,0 +1,6 @@
+Cython==0.24
+numpy==1.11.0
+pymongo==3.2.2
+scipy==0.17.1
+-e git+https://github.com/HIPS/Spearmint@e719c56cee9eefda5df6af40f834c9fa310e23a5#egg=spearmint
+tabulate==0.7.5
